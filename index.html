@@ -1,0 +1,89 @@
+
+​
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Shirts</title>
+    <style>
+        /* CSS to make the logo smaller */
+        img.logo {
+            width: 160px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+        /* CSS to style the shirt containers */
+        .shirt-container {
+            display: inline-block;
+            margin-right: 5px;
+            border: 1px solid #ccc; /* Border style */
+            padding: 10px; /* Add some padding for better spacing */
+        }
+        /* CSS to style the shirt images */
+        .shirt-img {
+            width: 200px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+        /* CSS to style the smaller shirt1 image */
+        .shirt1 {
+            width: 150px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+        /* CSS to style the smaller shirt1 image */
+        .shirt2 {
+            width: 150px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
+        }
+        /* CSS for the welcome message */
+        .welcome-message {
+            background-color: black; /* Background color */
+            color: white; /* Text color */
+            padding: 10px; /* Add some padding */
+            text-align: center; /* Center the text */
+        }
+    </style>
+    <script>
+        function zoomImage(imageId) {
+            var imgElement = document.getElementById(imageId);
+            if (imgElement.style.width === "200px") {
+                imgElement.style.width = "400px";
+            } else {
+                imgElement.style.width = "200px";
+            }
+        }
+    </script>
+</head>
+<body>
+    <img src="images/logo.png" alt="Website Logo" class="logo">
+    <div class="welcome-message">
+        <h3>Welcome to our T-Shirt Store....coming soon</h3>
+    </div>
+
+    <!-- First shirt container -->
+    <div class="shirt-container">
+        <img src="images/shirt1.png" alt="Shirt 1" class="shirt1" id="shirt1" onclick="zoomImage('shirt1')">
+        <p>Price: $20</p>
+        <label for="size-shirt1">Size:</label>
+        <select id="size-shirt1">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+    </div>
+
+    <!-- Second shirt container -->
+    <div class="shirt-container">
+        <img src="images/shirt2.png" alt="Shirt 2" class="shirt2" id="shirt2" onclick="zoomImage('shirt2')">
+        <p>Price: $25</p>
+        <label for="size-shirt2">Size:</label>
+        <select id="size-shirt2">
+            <option value="S">S</option>
+            <option value="M">M</option>
+            <option value="L">L</option>
+            <option value="XL">XL</option>
+        </select>
+    </div>
+
+    <!-- Additional shirt containers can be added here -->
+
+</body>
+</html>
