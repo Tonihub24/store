@@ -1,5 +1,3 @@
-
-​
 <!DOCTYPE html>
 <html>
 <head>
@@ -7,19 +5,19 @@
     <style>
         /* CSS to make the logo smaller */
         img.logo {
-            width: 160px; /* Adjust the width as needed */
+            width: 170px; /* Adjust the width as needed */
             height: auto; /* Maintain aspect ratio */
         }
         /* CSS to style the shirt containers */
         .shirt-container {
             display: inline-block;
-            margin-right: 5px;
-            border: 1px solid #ccc; /* Border style */
+            margin-right: 40px;
+            border: 3px solid #0f0101; /* Border style */
             padding: 10px; /* Add some padding for better spacing */
         }
         /* CSS to style the shirt images */
         .shirt-img {
-            width: 200px; /* Adjust the width as needed */
+            width: 150px; /* Adjust the width as needed */
             height: auto; /* Maintain aspect ratio */
         }
         /* CSS to style the smaller shirt1 image */
@@ -32,12 +30,14 @@
             width: 150px; /* Adjust the width as needed */
             height: auto; /* Maintain aspect ratio */
         }
-        /* CSS for the welcome message */
-        .welcome-message {
-            background-color: black; /* Background color */
-            color: white; /* Text color */
-            padding: 10px; /* Add some padding */
-            text-align: center; /* Center the text */
+        /* CSS for the copyright message */
+        .copyright {
+            text-align: center;
+            margin-top: 40px;
+        }
+        .copyright img {
+            width: 90px; /* Adjust the width as needed */
+            height: auto; /* Maintain aspect ratio */
         }
     </style>
     <script>
@@ -53,9 +53,8 @@
 </head>
 <body>
     <img src="images/logo.png" alt="Website Logo" class="logo">
-    <div class="welcome-message">
-        <h3>Welcome to our T-Shirt Store....coming soon</h3>
-    </div>
+    <h3> ....coming soon</h3>
+    
 
     <!-- First shirt container -->
     <div class="shirt-container">
@@ -82,8 +81,26 @@
             <option value="XL">XL</option>
         </select>
     </div>
+     
 
     <!-- Additional shirt containers can be added here -->
 
+    <!-- Copyright message -->
+    <div class="copyright">
+        <img src="images/logo.png" alt="Website Logo">
+        <p>© 2024 OddJobJoeCreation. All rights reserved.</p>
+    </div>
+
+    <!-- Contact Form -->
+    <main>
+        <p>SEND E-MAIL</p>
+        <form class="contact-form" action="contactform.php" method="post">
+            <input type="text" name="name" placeholder="Full Name">
+            <input type="email" name="mail" placeholder="Your E-mail">
+            <input type="text" name="subject" placeholder="Subject">
+            <textarea name="message" placeholder="Message"></textarea>
+            <button type="submit" name="submit">Send E-mail</button>
+        </form>
+    </main>
 </body>
 </html>
